@@ -1,7 +1,7 @@
 name: astrbot_plugin_interactive_story
-display_name: 互动故事
+display_name: 织梦 · Dreamweaver
 desc: QQ AI 文字冒险，支持五种题材、自定义剧本、独立进度和存档。
 version: v1.0.2
 author: SHX
-repo: https://github.com/Shxiao101/astrbot_plugin_interactive_story
+repo: https://github.com/Shxiao101/astrbot_plugin_dreamweaver
 astrbot_version: '>=4.9.2'

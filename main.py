@@ -120,7 +120,7 @@ class InteractiveStoryPlugin(Star):
             nodes = [
                 Node(
                     uin=str(event.get_self_id()),
-                    name="互动故事",
+                    name="织梦",
                     content=[Plain(label + result[offset : offset + 1500])],
                 )
                 for offset in range(0, len(result), 1500)

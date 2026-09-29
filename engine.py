@@ -14,7 +14,7 @@ from .prompts import GENRES, HORRORS, LEGACY_SETTINGS, MOODS, system_prompt
 
 logger = logging.getLogger("astrbot.interactive_story")
 
-HELP = """互动故事：每人独立进度，每轮选择1–3。
+HELP = """织梦：每人独立进度，每轮选择1–3。
 /story 开始 [题材] [恐怖度]（默认：{genre} {horror}）
 /story 剧本 <题材> <恐怖度> <正文>（支持多行，最多3000字）
 /story 1（或2、3）
@@ -127,7 +127,7 @@ def render(game: dict) -> str:
 
 
 def transcript(game: dict) -> str:
-    lines = [f"互动故事 · {game['genre']} · 恐怖度：{game['horror']}"]
+    lines = [f"织梦 · {game['genre']} · 恐怖度：{game['horror']}"]
     if game["script"]:
         lines += ["自定义剧本：", game["script"]]
     for i in range(0, len(game["history"]), 2):
